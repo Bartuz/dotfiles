@@ -27,14 +27,11 @@ files=(
 "gitconfig"
 "gitignore_global"
 "gitmessage"
-"hushlogin"
 "npmrc"
 "pryrc"
 "rubocop.yml"
 "svgo.yml"
-"tmux.conf"
 "tool-versions"
-"vimrc"
 "zshrc"
 )
 

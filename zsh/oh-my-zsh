@@ -6,6 +6,8 @@ plugins=(
 history
 npm
 osx
+git
+rails
 shrink-path
 yarn
 )
