@@ -67,6 +67,7 @@
   safecrlf     = warn
   pager = diff-so-fancy | less
   abbrev = 7
+  editor = vim
 
 [diff]
   tool = vimdiff3

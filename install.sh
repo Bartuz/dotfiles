@@ -29,6 +29,7 @@ files=(
 "gitmessage"
 "hushlogin"
 "npmrc"
+"powerlevelrc"
 "pryrc"
 "rubocop.yml"
 "svgo.yml"

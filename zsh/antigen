@@ -1,0 +1,36 @@
+source /usr/local/share/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+antigen bundle asdf
+antigen bundle autojump
+antigen bundle aws
+antigen bundle bundler
+antigen bundle capistrano
+antigen bundle common-aliases
+antigen bundle gem
+antigen bundle git-extras
+antigen bundle httpie
+antigen bundle history
+antigen bundle jira
+antigen bundle osx
+antigen bundle rails
+antigen bundle ssh-agent
+antigen bundle vscode
+antigen bundle web-search
+antigen bundle shrink-path
+antigen bundle yarn
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+POWERLEVEL9K_MODE='nerdfont-complete'
+antigen theme bhilburn/powerlevel9k powerlevel9k
+
+antigen apply

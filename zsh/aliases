@@ -33,10 +33,6 @@ alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
 alias lrt='ls -1Fcrt'
 alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
 
-# Finding stuff!
-alias fd='find . -type d -name'
-alias ff='find . -type f -name'
-
 # Jump to quick edits
 alias ea='$EDITOR ~/dotfiles/zsh/aliases'
 alias ed='$EDITOR ~/dotfiles'
@@ -58,13 +54,6 @@ alias t3a='tree -La 3'
 alias t4='tree -L 4'
 alias t4a='tree -La 4'
 alias tree='tree -CF'
-
-# Vim/Neovim
-alias vi='nvim'
-alias nv='nvim'
-alias vir='vim -R'
-alias vv='vim --version | less'
-alias vi0='vim -u NONE'
 
 # Git
 alias ga='git add'
@@ -92,31 +81,6 @@ alias grv='git remote -v'
 alias gs='git status'
 alias gtl='git tag --list | sort -r'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip--"'
-
-# Rails
-alias -g RED='RAILS_ENV=development'
-alias -g REP='RAILS_ENV=production'
-alias -g RET='RAILS_ENV=test'
-alias bx='bundle exec'
-alias crsp='COVERAGE=true rspec .'
-alias fos='foreman start'
-alias mina='_mina_command'
-alias rails='_rails_command'
-alias rc='rails console'
-alias rcop='rubocop'
-alias rdb='rails dbconsole'
-alias rddd='brew services restart postgresql; sleep 15; rails db:drop'
-alias rdm='rails db:migrate'
-alias rgm='rails generate migration'
-alias rs='rails server'
-alias rsp='rspec .'
-alias rspec='_rspec_command'
-alias rsr='rails restart'
-alias rtp='rails db:test:prepare'
-alias spring='_spring_command'
-alias sst='spring status'
-alias psp='spring stop && DISABLE_SPRING=0 bin/rake parallel:spec'
-alias om='overmind start'
 
 # Middleman
 alias mm='bundle exec middleman'
@@ -181,5 +145,3 @@ alias upd='softwareupdate -i -a'
 alias ct='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 alias color='colortest -w -s'
 alias hangout='open https://hangouts.google.com/hangouts/_'
-alias htop='sudo htop'
-alias copy='tr -d "\n" | pbcopy'

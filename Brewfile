@@ -7,6 +7,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "thoughtbot/formulae"
 tap "universal-ctags/universal-ctags"
+tap "caskroom/fonts"
 
 # Homebrew
 # https://github.com/Homebrew/brew/
@@ -28,10 +29,10 @@ brew "dockutil"
 brew "git"
 brew "git-extras"
 brew "git-quick-stats"
-brew "gmp" # Vim dependency
 brew "gpg" # asdf-nodejs dependency
 brew "htop"
 brew "httpie"
+brew "antigen"
 brew "imagemagick"
 brew "libtool" # asdf dependency
 brew "libxslt" # asdf dependency
@@ -59,6 +60,27 @@ brew "zsh"
 
 # homebrew-cask
 # https://github.com/caskroom/homebrew-cask
+cask "aerial"
+cask "alfred"
+cask "appdelete"
+cask "atom"
+cask "boom-3d"
+cask "day-o"
+cask "dash"
+cask "dropbox"
+cask "google-chrome"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "karabiner-elements"
+cask "kindle"
+cask "psequel"
+cask "recordit"
+cask "rescuetime"
+cask "slack"
+cask "spotify"
+cask "toggl"
+cask "font-firacode-nerd-font-mono"
+cask "font-firacode-nerd-font"
 cask "alfred"
 cask "visual-studio-code"
 cask "bartender"
