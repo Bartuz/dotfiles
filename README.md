@@ -55,8 +55,8 @@ Thanks to a [great blog post][blog-post] by Trevor Brown, I learned that you can
 ## GPG
 
 1. Import key
-2. echo 'default-cache-ttl 25200' > ~/.gnupg/gpg-agent.conf
-25200 = 7 * 3600 = 7 days
+2. echo 'default-cache-ttl 604800' > ~/.gnupg/gpg-agent.conf
+604800 = 7 * 86400 = 7 days
 
 ## Extensions
 
