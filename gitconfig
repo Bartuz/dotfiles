@@ -59,6 +59,7 @@
 
 [commit]
   template = ~/.gitmessage
+  gpgsign = true
 
 [core]
   autocrlf     = input
@@ -83,6 +84,9 @@
   default   = blue
   modified  = red
   untracked = cyan
+
+[gpg]
+  program = gpg
 
 [include]
   path = ~/.gitconfig.local

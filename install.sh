@@ -19,18 +19,24 @@ DOTFILES_DIR=$HOME/dotfiles
 VIM_DIR=$HOME/.vim
 NVIM_DIR=$HOME/.config/nvim
 
+cp -n $DOTFILES_DIR/gitconfig.local.example $DOTFILES_DIR/gitconfig.local || true
+
 files=(
 "asdfrc"
 "default-gems"
 "default-npm-packages"
+"editorconfig"
 "gemrc"
 "gitconfig"
+"gitconfig.local"
 "gitignore_global"
 "gitmessage"
 "hushlogin"
+"my.cnf"
 "npmrc"
 "powerlevelrc"
 "pryrc"
+"rspec"
 "rubocop.yml"
 "svgo.yml"
 "tool-versions"

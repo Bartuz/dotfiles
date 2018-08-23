@@ -11,6 +11,7 @@ export DISABLE_AUTO_TITLE=true
 export _Z_OWNER=$USER
 export RUBY_CONFIGURE_OPTIONS='--with-opt-dir=/usr/local/opt/openssl:/usr/local/opt/readline:/usr/local/opt/libyaml:/usr/local/opt/gdbm'
 export XDG_CONFIG_HOME=$HOME/.config
+export GPG_TTY=$(tty)
 
 . $HOME/dotfiles/zsh/theme
 . $HOME/dotfiles/zsh/antigen
@@ -36,3 +37,4 @@ HIST_STAMPS="yyyy-mm-dd"
 
 export PATH="$HOME/bin:$PATH"
 source /Users/bartuz/.asdf/asdf.sh
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"

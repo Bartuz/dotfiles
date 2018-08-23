@@ -1,6 +1,7 @@
 bundler
-haml_lint
-neovim
 pry
 rubocop
 tmuxinator
+rails
+mailcatcher
+fuubar

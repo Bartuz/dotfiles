@@ -30,6 +30,7 @@ brew "git"
 brew "git-extras"
 brew "git-quick-stats"
 brew "gpg" # asdf-nodejs dependency
+brew "gpg-agent"
 brew "htop"
 brew "httpie"
 brew "antigen"
@@ -38,7 +39,9 @@ brew "libtool" # asdf dependency
 brew "libxslt" # asdf dependency
 brew "libyaml" # asdf dependency
 brew "mas"
+brew "mysql"
 brew "overmind"
+brew "percona-toolkit"
 brew "pgcli"
 brew "phantomjs"
 brew "postgresql", restart_service: true
@@ -46,6 +49,7 @@ brew "python"
 brew "python3"
 brew "readline"
 brew "reattach-to-user-namespace"
+brew "redis"
 brew "rsync"
 brew "shellcheck"
 brew "sqlite"
@@ -74,7 +78,6 @@ cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "kindle"
 cask "psequel"
-cask "recordit"
 cask "rescuetime"
 cask "slack"
 cask "spotify"
@@ -99,3 +102,4 @@ cask "vagrant"
 mas "1Password", id: 443987910
 mas "Magnet", id: 441258766
 mas "DaisyDisk", id: 411643860
+mas "Monosnap", id: 540348655

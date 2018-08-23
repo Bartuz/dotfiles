@@ -2,7 +2,7 @@
 
 ![dotfiles screenshot][screenshot]
 
-These are the dotfiles I use on my Macs, currently running [macOS High Sierra (10.13)][high-sierra]. They are geared primarily towards [Ruby][ruby]/[Rails][rails] and [Node.js][nodejs] web development using Zsh (via [Oh-My-Zsh][oh-my-zsh]), [Vim][vim]/[Neovim][neovim], and [Tmux][tmux]. Also included are my [iTerm2][iterm2] and [Terminal.app][terminal] profiles.
+These are the dotfiles I use on my Macs, currently running [macOS High Sierra (10.13)][high-sierra]. They are geared primarily towards [Ruby][ruby]/[Rails][rails] and [Node.js][nodejs] web development using Zsh (via [Oh-My-Zsh][oh-my-zsh]), Also included are my [iTerm2][iterm2]
 
 ## Mac Bootstrap Script
 
@@ -14,7 +14,7 @@ NOTE: Mac Bootstrap automatically clones and installs this dotfiles repo.
 
 ## Prerequisites
 
-The dotfiles assume you are running macOS with the following software pre-installed:
+The dotfiles assume you are running macOS with the following software pre-in0-stalled:
 
 * [Oh-My-Zsh][oh-my-zsh]
 * [Homebrew][homebrew]
@@ -41,7 +41,6 @@ After running `install.sh` there are still a couple of things that need to be do
 * Set up iTerm2 or Terminal.app profile (see details below).
 * Add personal data to `~/.gitconfig.local`, `~/.vimrc.local`, and `~/.zshrc.local`.
 * Complete [Brew Bundle][brew-bundle] with `brew bundle install`
-* After opening Neovim, run [`:checkhealth`][checkhealth] and resolve errors/warnings.
 
 ## Setting up iTerm2
 
@@ -53,79 +52,88 @@ Thanks to a [great blog post][blog-post] by Trevor Brown, I learned that you can
 1. Press "Browse" and point it to `~/dotfiles/iterm2/com.googlecode.iterm2.plist`.
 1. Restart iTerm2.
 
-## Setting up Terminal.app
+## GPG
 
-Getting set up after a fresh install is simple.
+1. Import key
+2. echo 'default-cache-ttl 25200' > ~/.gnupg/gpg-agent.conf
+25200 = 7 * 3600 = 7 days
 
-1. Open Terminal.app.
-1. Select Terminal > Preferences. (But really you'll just press &#8984;, right? So much faster.)
-1. Select the Profiles tab.
-1. Click the gear icon and select Import...
-1. Select `~/dotfiles/terminal/<desired-profile>.terminal` and click Open.
-1. Click the Default button to keep using this profile in new Terminal windows.
+## Extensions
 
-## A Note about Vim performance and Ruby files
+1. Go to Preferences -> Extensions
 
-I recently discovered a resolution to some significant performance issues I had been experiencing running Vim on macOS. These issues were particularly painful when editing Ruby files. I've documented what I learned here:
+## Touch ID 
 
-&#9657; [What I've learned about slow performance in Vim](vim-performance.md)
+1. Add thumbs and index of both hands
 
-## Vim vs. Neovim
+## Alfred
 
-I'm currently trying out Neovim, and so far things are working nicely. For now I have things set up so I can run either Vim or Neovim interchangeably. This is accomplished by telling Neovim's config file (`~/.config/nvim/init.vim`) to source the standard Vim config file (`~/.vimrc`).
+1. Go to Preferences -> Keyboard -> Shortcuts
+2. Select left side Spotlight
+3. Turn off ⌘+space shortcuts
+4. Open alfred
+5. Change shortcut to ⌘+space
 
-**More info:**
+## Screen saver
 
-* https://neovim.io/doc/user/nvim.html#nvim-from-vim
-* https://neovim.io/doc/user/vim_diff.html#vim-differences
+1. Go to Preferences -> Desktop & Screen Saver
+2. Set to Aerial
+3. Start after 5 min
 
-## Some of my favorite dotfile repos
+## Language
 
-* Pro Vim (https://github.com/Integralist/ProVim)
-* Trevor Brown (https://github.com/Stratus3D/dotfiles)
-* Chris Toomey (https://github.com/christoomey/dotfiles)
-* thoughtbot (https://github.com/thoughtbot/dotfiles)
-* Lars Kappert (https://github.com/webpro/dotfiles)
-* Ryan Bates (https://github.com/ryanb/dotfiles)
-* Ben Orenstein (https://github.com/r00k/dotfiles)
-* Joshua Clayton (https://github.com/joshuaclayton/dotfiles)
-* Drew Neil (https://github.com/nelstrom/dotfiles)
-* Kevin Suttle (https://github.com/kevinSuttle/OSXDefaults)
-* Carlos Becker (https://github.com/caarlos0/dotfiles)
-* Zach Holman (https://github.com/holman/dotfiles/)
-* Mathias Bynens (https://github.com/mathiasbynens/dotfiles/)
-* Paul Irish (https://github.com/paulirish/dotfiles)
+1. Go to Preferences -> Language & Region
+2. Change preferred languages to list of: English, Polish
+3. Region: Poland
+4. Click advanced
+5. Set decimal separator to "."
 
-## Helpful web resources on dotfiles, et al.
+## Security
 
-* http://dotfiles.github.io/
-* https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
-* http://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles--net-35449
-* https://github.com/webpro/awesome-dotfiles
-* http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
-* http://carlosbecker.com/posts/first-steps-with-mac-os-x-as-a-developer/
-* https://mattstauffer.co/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell
+1. Go to Preferences -> Language & Region
+2. Require password: 5 seconds
+3. Add email to lock message
 
-## License
+## Notifications:
 
-Copyright &copy; 2018 Joshua Steele. [MIT License][license]
+1. Go to Preferences -> Notifications
+2. Do not Disturb -> When the display is sleeping
 
-[asdf]: https://github.com/asdf-vm/asdf
-[blog-post]: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
-[brew-bundle]: https://github.com/Homebrew/homebrew-bundle
-[checkhealth]: https://neovim.io/doc/user/pi_health.html#:checkhealth
-[git]: https://git-scm.com/
-[high-sierra]: https://www.apple.com/macos/high-sierra/
-[homebrew]: http://brew.sh
-[iterm2]: https://www.iterm2.com/
-[license]: https://github.com/joshukraine/dotfiles/blob/master/LICENSE
-[mac-bootstrap]: http://jsua.co/macos
-[neovim]: https://neovim.io/
-[nodejs]: https://nodejs.org/
-[oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
-[rails]: https://rubyonrails.org/
-[ruby]: https://www.ruby-lang.org/en
-[screenshot]: https://s3.amazonaws.com/images.jsua.co/dotfiles-05-24-2018.png
-[terminal]: https://en.wikipedia.org/wiki/Terminal_(macOS)
-[tmux]: https://github.com/tmux/tmux/wiki
-[vim]: http://www.vim.org/
+## Nightshift
+
+1. Go to Preferences -> Displays -> Night Shift
+2. Set Schedule: Sunset to Sunrise
+3. Set to warm colors
+
+## Keyboard
+
+1. Go to Preferences -> Keyboard -> Keyboard
+2. Set adjust keyboard brightness in low light to true
+3. Set turn backlight off after 1 minute
+
+## Monosnap
+
+1. Go to Preferences -> Keyboard -> Shortcuts -> Screen Shots
+2. Change Shift + CMD + 4 shortcut to Shift + CMD + 8 
+3. Disable this shortcut
+4. Go to Monosnap -> Preferences -> General
+5. After screenshot: Upload screenshot. Sound effects = true. After upload: Copy direct image link. Short links: true. Launch at login: true
+6. Go to Hotkeys
+7.  Capture frozen area: cmd + shift + 4. Record video cmd + shift + 5
+8. Login to account
+
+## Sync preferences
+
+1. Go to Preferences -> iCloud 
+2. Go to Preferences -> Internet Account
+3. Go to Preferences -> App Store
+4. Check everything under automatically check for updates
+5. Go to Preferences -> Users & Groups -> Login Items
+6. Remove all except for: iTunesHelper, Magnet, Day-O, Google Chrome, Alfred 3, RescueTime
+7. Select all as hidden
+
+## Karabiner
+
+1. Open karabiner
+2. Initial keyboard setup
+3. change non_us_backslack (Paragraph) to ESC or to grave_accent_and_tilde
