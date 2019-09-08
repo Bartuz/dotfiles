@@ -114,3 +114,5 @@
 
 [user]
 	email = filip.bartuzi@simplybusiness.co.uk
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
