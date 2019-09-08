@@ -102,8 +102,8 @@ Thanks to a [great blog post][blog-post] by Trevor Brown, I learned that you can
 ## Nightshift
 
 1. Go to Preferences -> Displays -> Night Shift
-2. Set Schedule: Sunset to Sunrise
-3. Set to warm colors
+2. Set Schedule: off
+3. Open flux, set colors to recommended
 
 ## Keyboard
 

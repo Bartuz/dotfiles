@@ -38,3 +38,4 @@ HIST_STAMPS="yyyy-mm-dd"
 export PATH="$HOME/bin:$PATH"
 source /Users/bartuz/.asdf/asdf.sh
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PROJECTS_HOME="${HOME}/projects"

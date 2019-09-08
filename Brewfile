@@ -30,7 +30,6 @@ brew "git"
 brew "git-extras"
 brew "git-quick-stats"
 brew "gpg" # asdf-nodejs dependency
-brew "gpg-agent"
 brew "htop"
 brew "httpie"
 brew "antigen"
@@ -43,7 +42,6 @@ brew "mysql"
 brew "overmind"
 brew "percona-toolkit"
 brew "pgcli"
-brew "phantomjs"
 brew "postgresql", restart_service: true
 brew "python"
 brew "python3"
@@ -61,13 +59,13 @@ brew "unixodbc" # asdf dependency
 brew "wget"
 brew "yarn", args: ["without-node"]
 brew "zsh"
+brew "flux"
 
 # homebrew-cask
 # https://github.com/caskroom/homebrew-cask
 cask "aerial"
 cask "alfred"
 cask "appdelete"
-cask "atom"
 cask "boom-3d"
 cask "day-o"
 cask "dash"
@@ -103,3 +101,5 @@ mas "1Password", id: 443987910
 mas "Magnet", id: 441258766
 mas "DaisyDisk", id: 411643860
 mas "Monosnap", id: 540348655
+mas "Things 3", id: 904280696
+mas "Paprika", id: 1303222628
