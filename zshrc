@@ -26,8 +26,8 @@ HISTFILE=~/.zsh_history
 HIST_STAMPS="yyyy-mm-dd"
 
 # asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# . $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/completions/asdf.bash
 
 # Travis CI
 [ -f ~/.travis/travis.sh ] && . ~/.travis/travis.sh
@@ -36,6 +36,5 @@ HIST_STAMPS="yyyy-mm-dd"
 [[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
 
 export PATH="$HOME/bin:$PATH"
-source /Users/bartuz/.asdf/asdf.sh
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PROJECTS_HOME="${HOME}/projects"

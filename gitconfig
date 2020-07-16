@@ -59,7 +59,7 @@
 
 [commit]
   template = ~/.gitmessage
-  gpgsign = true
+  gpgsign = false
 
 [core]
   autocrlf     = input
