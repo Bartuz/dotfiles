@@ -43,8 +43,6 @@ brew "overmind"
 brew "percona-toolkit"
 brew "pgcli"
 brew "postgresql", restart_service: true
-brew "python"
-brew "python3"
 brew "readline"
 brew "reattach-to-user-namespace"
 brew "redis"
@@ -63,7 +61,6 @@ brew "flux"
 
 # homebrew-cask
 # https://github.com/caskroom/homebrew-cask
-cask "aerial"
 cask "alfred"
 cask "appdelete"
 cask "boom-3d"
@@ -78,8 +75,6 @@ cask "kindle"
 cask "psequel"
 cask "rescuetime"
 cask "slack"
-cask "spotify"
-cask "toggl"
 cask "font-firacode-nerd-font-mono"
 cask "font-firacode-nerd-font"
 cask "alfred"
@@ -88,9 +83,6 @@ cask "bartender"
 cask "carbon-copy-cloner"
 cask "caskroom/versions/vmware-fusion8"
 cask "cleanmymac"
-cask "dash"
-cask "dropbox"
-cask "firefox"
 cask "google-chrome"
 cask "iterm2"
 cask "postman"
@@ -102,4 +94,3 @@ mas "Magnet", id: 441258766
 mas "DaisyDisk", id: 411643860
 mas "Monosnap", id: 540348655
 mas "Things 3", id: 904280696
-mas "Paprika", id: 1303222628
