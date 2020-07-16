@@ -55,12 +55,11 @@ brew "tree"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 brew "unixodbc" # asdf dependency
 brew "wget"
-brew "yarn", args: ["without-node"]
 brew "zsh"
-brew "flux"
 
 # homebrew-cask
 # https://github.com/caskroom/homebrew-cask
+cask "flux"
 cask "alfred"
 cask "appdelete"
 cask "boom-3d"
@@ -75,8 +74,8 @@ cask "kindle"
 cask "psequel"
 cask "rescuetime"
 cask "slack"
-cask "font-firacode-nerd-font-mono"
-cask "font-firacode-nerd-font"
+cask "font-fira-code-nerd-font-mono"
+cask "font-fira-code-nerd-font"
 cask "alfred"
 cask "visual-studio-code"
 cask "bartender"
@@ -88,6 +87,7 @@ cask "iterm2"
 cask "postman"
 cask "the-unarchiver"
 cask "vagrant"
+cask "robo-3t"
 
 mas "1Password", id: 443987910
 mas "Magnet", id: 441258766
