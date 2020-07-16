@@ -1,13 +1,13 @@
 # https://github.com/Homebrew/homebrew-bundle
 
-tap "caskroom/cask-cask"
-tap "caskroom/cask-versions"
+tap "homebrew/cask-cask"
+tap "homebrew/cask-versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "thoughtbot/formulae"
 tap "universal-ctags/universal-ctags"
-tap "caskroom/fonts"
+tap "homebrew/cask-fonts"
 
 # Homebrew
 # https://github.com/Homebrew/brew/
